@@ -1,0 +1,44 @@
+Date - 09-12-2024
+sanjilsharma@sanjilsharma:~$ pwd
+/home/sanjilsharma
+sanjilsharma@sanjilsharma:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+sanjilsharma@sanjilsharma:~$ cd Desktop
+sanjilsharma@sanjilsharma:~/Desktop$ mkdir sample1
+sanjilsharma@sanjilsharma:~/Desktop$ cd sample1
+sanjilsharma@sanjilsharma:~/Desktop/sample1$ touch t1.txt
+sanjilsharma@sanjilsharma:~/Desktop/sample1$ ls
+t1.txt
+sanjilsharma@sanjilsharma:~/Desktop/sample1$ cd ..
+sanjilsharma@sanjilsharma:~/Desktop$ mkdir sample2
+sanjilsharma@sanjilsharma:~/Desktop$ cp sample1/t1.txt sample2
+sanjilsharma@sanjilsharma:~/Desktop$ cd sample2
+sanjilsharma@sanjilsharma:~/Desktop/sample2$ ls
+t1.txt
+sanjilsharma@sanjilsharma:~/Desktop/sample2$ cd ..
+sanjilsharma@sanjilsharma:~/Desktop$ mkdir sample3
+sanjilsharma@sanjilsharma:~/Desktop$ mv sample2/t1.txt sample3
+sanjilsharma@sanjilsharma:~/Desktop$ cd sample3
+sanjilsharma@sanjilsharma:~/Desktop/sample3$ ls
+t1.txt
+sanjilsharma@sanjilsharma:~/Desktop/sample3$ cd ..
+sanjilsharma@sanjilsharma:~/Desktop$ cd sample2
+sanjilsharma@sanjilsharma:~/Desktop/sample2$ ls
+sanjilsharma@sanjilsharma:~/Desktop/sample2$ cd ..
+sanjilsharma@sanjilsharma:~/Desktop$ rmdir sample2
+sanjilsharma@sanjilsharma:~/Desktop$ ls
+sample1  sample3
+sanjilsharma@sanjilsharma:~/Desktop$ rm -r sample3
+sanjilsharma@sanjilsharma:~/Desktop$ cd sample3
+bash: cd: sample3: No such file or directory
+sanjilsharma@sanjilsharma:~/Desktop$ ls
+sample1
+sanjilsharma@sanjilsharma:~/Desktop$ cd sample1
+sanjilsharma@sanjilsharma:~/Desktop/sample1$ rm t1.txt
+sanjilsharma@sanjilsharma:~/Desktop/sample1$ ls
+sanjilsharma@sanjilsharma:~/Desktop/sample1$ rmdir sample1
+rmdir: failed to remove 'sample1': No such file or directory
+sanjilsharma@sanjilsharma:~/Desktop/sample1$ cd ..
+sanjilsharma@sanjilsharma:~/Desktop$ rmdir sample1
+sanjilsharma@sanjilsharma:~/Desktop$ ls
+sanjilsharma@sanjilsharma:~/Desktop$ 
