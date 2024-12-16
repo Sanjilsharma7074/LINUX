@@ -68,3 +68,39 @@ sanjilsharma@sanjilsharma:~$ cat sample2>>sample1
 sanjilsharma@sanjilsharma:~$ cat<sample1
 sanjil
 CU
+sanjilsharma@sanjilsharma:~$ cat> file1.txt
+
+
+we are college students 
+
+
+G24
+sanjilsharma@sanjilsharma:~$ cat -b file1.txt
+
+
+     1	we are college students 
+
+
+     2	G24
+sanjilsharma@sanjilsharma:~$ cat -n file1.txt
+     1	
+     2	
+     3	we are college students 
+     4	
+     5	
+     6	G24
+sanjilsharma@sanjilsharma:~$ tac file1.txt
+G24
+
+
+we are college students 
+
+
+sanjilsharma@sanjilsharma:~$ rev file1.txt
+
+
+ stneduts egelloc era ew
+
+
+42G
+
