@@ -104,3 +104,131 @@ sanjilsharma@sanjilsharma:~$ rev file1.txt
 
 42G
 
+sanjilsharma@sanjilsharma:~$ cat<file1.txt
+
+
+we are college students 
+
+
+G24
+sanjilsharma@sanjilsharma:~$ head file1.txt
+
+
+we are college students 
+
+
+G24
+sanjilsharma@sanjilsharma:~$ cat>file1.txt
+ds
+d
+dfd
+sfsfs
+sdsd
+sdsd
+sdsd
+sdsd
+sdd
+ewe
+sd
+gngh
+
+hj
+hjhj
+hjh
+jh
+j
+h
+j
+hj
+hhj
+g
+hghth
+gh
+g
+hg
+h
+g
+hg
+hghg
+sanjilsharma@sanjilsharma:~$ head file1.txt
+ds
+d
+dfd
+sfsfs
+sdsd
+sdsd
+sdsd
+sdsd
+sdd
+ewe
+sanjilsharma@sanjilsharma:~$ head -5 file1.txt
+ds
+d
+dfd
+sfsfs
+sdsd
+sanjilsharma@sanjilsharma:~$ head -n 3 file1.txt
+ds
+d
+dfd
+sanjilsharma@sanjilsharma:~$ head -n -10 file1.txt
+ds
+d
+dfd
+sfsfs
+sdsd
+sdsd
+sdsd
+sdsd
+sdd
+ewe
+sd
+gngh
+
+hj
+hjhj
+hjh
+jh
+j
+h
+j
+hj
+sanjilsharma@sanjilsharma:~$ head -n -30 file1.txt
+ds
+sanjilsharma@sanjilsharma:~$ head -c 100 file1.txt
+ds
+d
+dfd
+sfsfs
+sdsd
+sdsd
+sdsd
+sdsd
+sdd
+ewe
+sd
+gngh
+
+hj
+hjhj
+hjh
+jh
+j
+h
+j
+hj
+hhj
+g
+hghth
+gh
+g
+hg
+h
+g
+sanjilsharma@sanjilsharma:~$ head -c 10 file1.txt
+ds
+d
+dfd
+ssanjilsharma@sanjilsharma:~$ 
+
+
