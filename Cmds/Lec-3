@@ -1,0 +1,70 @@
+sanjilsharma@sanjilsharma:~$ mkdir sanjil{1..10}
+sanjilsharma@sanjilsharma:~$ ls
+Desktop    Music     sanjil1   sanjil3  sanjil6  sanjil9    Videos
+Documents  Pictures  sanjil10  sanjil4  sanjil7  snap
+Downloads  Public    sanjil2   sanjil5  sanjil8  Templates
+sanjilsharma@sanjilsharma:~$ rmdir sanjil{1..10}
+sanjilsharma@sanjilsharma:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+sanjilsharma@sanjilsharma:~$ mkdir .f1.txt
+sanjilsharma@sanjilsharma:~$ ls -a
+.              .bashrc  Documents  Music             Public
+..             .cache   Downloads  .pam_environment  snap
+.bash_history  .config  .f1.txt    Pictures          Templates
+.bash_logout   Desktop  .local     .profile          Videos
+sanjilsharma@sanjilsharma:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+sanjilsharma@sanjilsharma:~$ mv .f1.txt g24.txt
+sanjilsharma@sanjilsharma:~$ ls
+Desktop    Downloads  Music     Public  Templates
+Documents  g24.txt    Pictures  snap    Videos
+sanjilsharma@sanjilsharma:~$ ls -a
+.              .bashrc  Documents  Music             Public
+..             .cache   Downloads  .pam_environment  snap
+.bash_history  .config  g24.txt    Pictures          Templates
+.bash_logout   Desktop  .local     .profile          Videos
+sanjilsharma@sanjilsharma:~$ cat file1.txt
+cat: file1.txt: No such file or directory
+sanjilsharma@sanjilsharma:~$ cat>file1.txt
+hello everyone
+listen carefully
+sanjilsharma@sanjilsharma:~$ ls
+Desktop    Downloads  g24.txt  Pictures  snap       Videos
+Documents  file1.txt  Music    Public    Templates
+sanjilsharma@sanjilsharma:~$ cat<file1.txt
+hello everyone
+listen carefully
+sanjilsharma@sanjilsharma:~$ cat file1.txt
+hello everyone
+listen carefully
+sanjilsharma@sanjilsharma:~$ cat>>file1.txt
+hello my name is xyz
+sanjilsharma@sanjilsharma:~$ cat<file1.txt
+hello everyone
+listen carefully
+hello my name is xyz
+sanjilsharma@sanjilsharma:~$ cat>fil1.txt
+hello world
+sanjilsharma@sanjilsharma:~$ cat>file1.txt
+hello world
+sanjilsharma@sanjilsharma:~$ cat<file1.txt
+hello world
+sanjilsharma@sanjilsharma:~$ ls
+Desktop    Downloads  file1.txt  Music     Public  Templates
+Documents  fil1.txt   g24.txt    Pictures  snap    Videos
+sanjilsharma@sanjilsharma:~$ rmdir fil1.txt
+rmdir: failed to remove 'fil1.txt': Not a directory
+sanjilsharma@sanjilsharma:~$ rm fil1.txt
+sanjilsharma@sanjilsharma:~$ ls
+Desktop    Downloads  g24.txt  Pictures  snap       Videos
+Documents  file1.txt  Music    Public    Templates
+sanjilsharma@sanjilsharma:~$ cat>sample1
+sanjil
+sanjilsharma@sanjilsharma:~$ cat>sample2
+CU
+sanjilsharma@sanjilsharma:~$ cat sample3>>sample1
+cat: sample3: No such file or directory
+sanjilsharma@sanjilsharma:~$ cat sample2>>sample1
+sanjilsharma@sanjilsharma:~$ cat<sample1
+sanjil
+CU
