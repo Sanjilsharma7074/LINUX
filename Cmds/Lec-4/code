@@ -1,0 +1,143 @@
+sanjilsharma@sanjilsharma:~$ ls -l
+total 52
+drwxr-xr-x 2 sanjilsharma sanjilsharma 4096 Dec 10 04:25 Desktop
+drwxr-xr-x 2 sanjilsharma sanjilsharma 4096 Dec 10 03:17 Documents
+drwxr-xr-x 2 sanjilsharma sanjilsharma 4096 Dec 10 03:17 Downloads
+-rw-rw-r-- 1 sanjilsharma sanjilsharma  108 Dec 16 15:24 file1.txt
+drwxrwxr-x 2 sanjilsharma sanjilsharma 4096 Dec 16 14:23 g24.txt
+drwxr-xr-x 2 sanjilsharma sanjilsharma 4096 Dec 10 03:17 Music
+drwxr-xr-x 2 sanjilsharma sanjilsharma 4096 Dec 10 03:17 Pictures
+drwxr-xr-x 2 sanjilsharma sanjilsharma 4096 Dec 10 03:17 Public
+-rw-rw-r-- 1 sanjilsharma sanjilsharma   10 Dec 16 14:51 sample1
+-rw-rw-r-- 1 sanjilsharma sanjilsharma    3 Dec 16 14:50 sample2
+drwx------ 5 sanjilsharma sanjilsharma 4096 Dec 16 15:00 snap
+drwxr-xr-x 2 sanjilsharma sanjilsharma 4096 Dec 10 03:17 Templates
+drwxr-xr-x 2 sanjilsharma sanjilsharma 4096 Dec 10 03:17 Videos
+sanjilsharma@sanjilsharma:~$ chmod u-w file1.txt
+sanjilsharma@sanjilsharma:~$ ls -l
+total 52
+drwxr-xr-x 2 sanjilsharma sanjilsharma 4096 Dec 10 04:25 Desktop
+drwxr-xr-x 2 sanjilsharma sanjilsharma 4096 Dec 10 03:17 Documents
+drwxr-xr-x 2 sanjilsharma sanjilsharma 4096 Dec 10 03:17 Downloads
+-r--rw-r-- 1 sanjilsharma sanjilsharma  108 Dec 16 15:24 file1.txt
+drwxrwxr-x 2 sanjilsharma sanjilsharma 4096 Dec 16 14:23 g24.txt
+drwxr-xr-x 2 sanjilsharma sanjilsharma 4096 Dec 10 03:17 Music
+drwxr-xr-x 2 sanjilsharma sanjilsharma 4096 Dec 10 03:17 Pictures
+drwxr-xr-x 2 sanjilsharma sanjilsharma 4096 Dec 10 03:17 Public
+-rw-rw-r-- 1 sanjilsharma sanjilsharma   10 Dec 16 14:51 sample1
+-rw-rw-r-- 1 sanjilsharma sanjilsharma    3 Dec 16 14:50 sample2
+drwx------ 5 sanjilsharma sanjilsharma 4096 Dec 16 15:00 snap
+drwxr-xr-x 2 sanjilsharma sanjilsharma 4096 Dec 10 03:17 Templates
+drwxr-xr-x 2 sanjilsharma sanjilsharma 4096 Dec 10 03:17 Videos
+sanjilsharma@sanjilsharma:~$ sudo apt install vim
+[sudo] password for sanjilsharma: 
+Sorry, try again.
+[sudo] password for sanjilsharma: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libsodium23 vim-common vim-runtime vim-tiny xxd
+Suggested packages:
+  ctags vim-doc vim-scripts indent
+The following NEW packages will be installed:
+  libsodium23 vim vim-runtime
+The following packages will be upgraded:
+  vim-common vim-tiny xxd
+3 upgraded, 3 newly installed, 0 to remove and 179 not upgraded.
+Need to get 10.6 MB of archives.
+After this operation, 42.0 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu noble-updates/main amd64 vim-tiny amd64 2:9.1.0016-1ubuntu7.5 [803 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu noble-updates/main amd64 vim-common all 2:9.1.0016-1ubuntu7.5 [385 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu noble-updates/main amd64 xxd amd64 2:9.1.0016-1ubuntu7.5 [63.3 kB]
+Get:4 http://in.archive.ubuntu.com/ubuntu noble/main amd64 libsodium23 amd64 1.0.18-1build3 [161 kB]
+Get:5 http://in.archive.ubuntu.com/ubuntu noble-updates/main amd64 vim-runtime all 2:9.1.0016-1ubuntu7.5 [7279 kB]
+Get:6 http://in.archive.ubuntu.com/ubuntu noble-updates/main amd64 vim amd64 2:9.1.0016-1ubuntu7.5 [1881 kB]
+Fetched 10.6 MB in 3s (3063 kB/s)      
+(Reading database ... 150332 files and directories currently installed.)
+Preparing to unpack .../0-vim-tiny_2%3a9.1.0016-1ubuntu7.5_amd64.deb ...
+Unpacking vim-tiny (2:9.1.0016-1ubuntu7.5) over (2:9.1.0016-1ubuntu7.1) ...
+Preparing to unpack .../1-vim-common_2%3a9.1.0016-1ubuntu7.5_all.deb ...
+Unpacking vim-common (2:9.1.0016-1ubuntu7.5) over (2:9.1.0016-1ubuntu7.1) ...
+Preparing to unpack .../2-xxd_2%3a9.1.0016-1ubuntu7.5_amd64.deb ...
+Unpacking xxd (2:9.1.0016-1ubuntu7.5) over (2:9.1.0016-1ubuntu7.1) ...
+Selecting previously unselected package libsodium23:amd64.
+Preparing to unpack .../3-libsodium23_1.0.18-1build3_amd64.deb ...
+Unpacking libsodium23:amd64 (1.0.18-1build3) ...
+Selecting previously unselected package vim-runtime.
+Preparing to unpack .../4-vim-runtime_2%3a9.1.0016-1ubuntu7.5_all.deb ...
+Adding 'diversion of /usr/share/vim/vim91/doc/help.txt to /usr/share/vim/vim91/d
+oc/help.txt.vim-tiny by vim-runtime'
+Adding 'diversion of /usr/share/vim/vim91/doc/tags to /usr/share/vim/vim91/doc/t
+ags.vim-tiny by vim-runtime'
+Unpacking vim-runtime (2:9.1.0016-1ubuntu7.5) ...
+Selecting previously unselected package vim.
+Preparing to unpack .../5-vim_2%3a9.1.0016-1ubuntu7.5_amd64.deb ...
+Unpacking vim (2:9.1.0016-1ubuntu7.5) ...
+Setting up libsodium23:amd64 (1.0.18-1build3) ...
+Setting up xxd (2:9.1.0016-1ubuntu7.5) ...
+Setting up vim-common (2:9.1.0016-1ubuntu7.5) ...
+Setting up vim-runtime (2:9.1.0016-1ubuntu7.5) ...
+Setting up vim (2:9.1.0016-1ubuntu7.5) ...
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/ex (ex) in aut
+o mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rview (rview) 
+in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rvim (rvim) in
+ auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vi (vi) in aut
+o mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/view (view) in
+ auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vim (vim) in a
+uto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vimdiff (vimdi
+ff) in auto mode
+Setting up vim-tiny (2:9.1.0016-1ubuntu7.5) ...
+Processing triggers for desktop-file-utils (0.27-2build1) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for gnome-menus (3.36.0-1.1ubuntu3) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.3) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+sanjilsharma@sanjilsharma:~$ vim f1.txt
+sanjilsharma@sanjilsharma:~$ cat<f1.txt
+hello everyone 
+my name is sanjil sharma 
+i am a student of chitkara university
+
+sanjilsharma@sanjilsharma:~$ nano f1.txt
+sanjilsharma@sanjilsharma:~$ cat f1.txt
+hello everyone 
+my name is sanjil sharma 
+i am a student of chitkara university
+fjekf
+cdfsdf
+sfhsadjjfsd
+sdfhdsb
+dsjfjhds
+dsgcfhsd
+fhjsd
+hf
+sdsgfs
+xhjsdf
+hjds
+
+sanjilsharma@sanjilsharma:~$ nano f1.txt
+sanjilsharma@sanjilsharma:~$ cat f1.txt
+hello everyone 
+my name is sanjil sharma 
+i am a student of chitkara university
+fjekf
+cdfsdf
+sfhsadjjfsd
+sdfhdsb
+dsjfjhds
+dsgcfhsd
+fhjsd
+hf
+sdsgfs
+xhjsdf
+hjds
+hey everyone 
+this is the group g24
